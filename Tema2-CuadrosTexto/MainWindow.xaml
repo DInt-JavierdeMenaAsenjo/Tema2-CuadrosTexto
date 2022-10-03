@@ -1,0 +1,21 @@
+﻿<Window x:Class="Tema2_CuadrosTexto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2_CuadrosTexto"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="570">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="70,61,0,0" TextWrapping="Wrap" Text="Nombre" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="70,223,0,0" TextWrapping="Wrap" Text="Edad" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="70,142,0,0" TextWrapping="Wrap" Text="Apellido" VerticalAlignment="Top"/>
+        <TextBox Tag="name" HorizontalAlignment="Left" Height="23" Margin="70,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="TextBox_F1"/>
+        <TextBox Tag="surname" HorizontalAlignment="Left" Height="23" Margin="70,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="TextBox_F1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="70,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="TextBox_F2"/>
+        <TextBlock x:Name="NombreHint_TextBlock" HorizontalAlignment="Left" Margin="215,82,0,0" TextWrapping="Wrap" Text="Nombre del cliente" VerticalAlignment="Top" Foreground="#FF8F8F8F" Visibility="Hidden"/>
+        <TextBlock x:Name="ApellidoHint_TextBlock" HorizontalAlignment="Left" Margin="215,163,0,0" TextWrapping="Wrap" Text="Nombre del cliente" VerticalAlignment="Top" Foreground="#FF8F8F8F" Visibility="Hidden"/>
+        <TextBlock x:Name="EdadError_TextBlock" HorizontalAlignment="Left" Margin="215,244,0,0" TextWrapping="Wrap" Text="Edad incorrecta" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
