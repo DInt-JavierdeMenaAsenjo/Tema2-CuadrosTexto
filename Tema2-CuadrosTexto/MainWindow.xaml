@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema2_CuadrosTexto"
         mc:Ignorable="d"
+        Icon="assets/verify.ico"
         Title="MainWindow" Height="450" Width="570">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="70,61,0,0" TextWrapping="Wrap" Text="Nombre" VerticalAlignment="Top"/>
